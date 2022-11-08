@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #14fff1;
+    border: 3px solid #14fff1;
+    width: 100%;
+    font-size: 16px;
+    height: 70px;
+    border-radius: 1rem;
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+    box-shadow: inset 0 0 32px #14fff1, 0 0 32px #14fff1;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    .loading{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #14fff1;
+      transform: translate(-50%, -50%);
+      left: 0%;
+      top: 120%;
+      transform: perspective(64px) rotate(180deg) scale(1, 0.35);
+      filter: blur(32px);
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 0.8rem;
+
+      width: 100%;
+      height: 100%;
+      background-color: #14fff1;
+      left: 0;
+      top: 0;
+      box-shadow: 0 0 100px 12px #14fff1;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: #272727;
+    }
+    &:hover::after,
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}

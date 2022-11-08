@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+
+  .backgroundImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .backgroundImage2 {
+    padding: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    border: 3px solid;
+    border-image: linear-gradient(#00a2ff, #33ff00) 1 100%;
+
+    z-index: 1;
+    background: linear-gradient(152.48deg, #000000 -3.58%, #2c2c2c 105.81%);
+
+    filter: drop-shadow(0px 14px 111px rgba(0, 0, 0, 0.11))
+      drop-shadow(0px 7.00684px 55.5542px rgba(0, 0, 0, 0.0836366))
+      drop-shadow(0px 4.22059px 33.4632px rgba(0, 0, 0, 0.0716748))
+      drop-shadow(0px 2.70478px 21.445px rgba(0, 0, 0, 0.0627984))
+      drop-shadow(0px 1.75302px 13.8989px rgba(0, 0, 0, 0.055))
+      drop-shadow(0px 1.1035px 8.74921px rgba(0, 0, 0, 0.0472016))
+      drop-shadow(0px 0.634032px 5.02697px rgba(0, 0, 0, 0.0383252))
+      drop-shadow(0px 0.279054px 2.2125px rgba(0, 0, 0, 0.0263634));
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .textIntroduction {
+    color: #fff;
+    padding: 2rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .containerAdvantage {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .itemAdvantage {
+      color: #fff;
+      cursor: pointer;
+      text-align: left;
+      margin: 1rem 0rem;
+      background-color: #0f0f0f;
+      box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.24),
+        0px 50.0488px 40.0391px rgba(0, 0, 0, 0.18248),
+        0px 30.1471px 24.1177px rgba(0, 0, 0, 0.156381),
+        0px 19.3198px 15.4559px rgba(0, 0, 0, 0.137015),
+        0px 12.5216px 10.0172px rgba(0, 0, 0, 0.12),
+        0px 7.88218px 6.30574px rgba(0, 0, 0, 0.102985),
+        0px 4.5288px 3.62304px rgba(0, 0, 0, 0.0836187),
+        0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0575202);
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      transition: 0.5s all;
+
+      &:hover {
+        transform: translateY(-5%);
+        background-color: #202020;
+      }
+
+      h4 {
+        position: relative;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -10px;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #00a2ff;
+          width: 6px;
+          border-radius: 2px;
+          height: 50%;
+        }
+      }
+
+      span {
+        font-weight: 300;
+        color: #e0e0e0;
+      }
+    }
+  }
+}
