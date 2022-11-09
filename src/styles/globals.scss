@@ -27,6 +27,22 @@ a {
   color: #fff;
   border: none;
   margin: 0 auto;
+  margin-top: 3rem;
   font-size: 32px;
+  animation: jumpping 1.5s infinite;
+}
+
+@keyframes jumpping {
+  0% {
+    top: -20px;
+  }
+
+  50% {
+    top: 0px;
+  }
+
+  100% {
+    top: -20px;
+  }
 }
 

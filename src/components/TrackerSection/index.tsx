@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 function TrackerSection() {
   return (
     <div className={styles.container}>
-      <h2>CONHEÇA O FUTURO ABAIXO</h2>
+      <h2>NETTRACKER APRESENTA</h2>
     </div>
   );
 }
